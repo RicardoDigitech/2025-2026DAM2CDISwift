@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+class RelojPulseraModel: RelojModel{
+    var tipoCorrea: String
+    var tamanyoCaja: Int
+    
+    init(marca: String, movimiento: String, precio: Double, digital: Bool, duenyo: Duenyo, tipoCorrea: String, tamanyoCaja: Int) {
+        self.tipoCorrea = tipoCorrea
+        self.tamanyoCaja = tamanyoCaja
+        super.init(marca: marca, movimiento: movimiento, precio: precio, digital: digital, duenyo: duenyo)
+    }
+    
+    override func mostrarValores() {
+        print("Mi reloj de pulsera es de marca \(marca)")
+    }
+}

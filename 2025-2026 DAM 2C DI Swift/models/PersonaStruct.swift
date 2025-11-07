@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct PersonaStruct {
+    var nombre: String
+    var apellidos: String
+    var edad: Int
+}
